@@ -1,0 +1,132 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    left: -75px;
+}
+
+a {
+    text-decoration: none;
+
+    .card-image-top {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.badge-approved {
+    @include badge;
+    background-color: $primary_color;
+
+}
+
+.badge-not-approved {
+    @include badge;
+    background-color: $red_color;
+}
+
+.badge-on-approvation {
+    @include badge;
+    background-color: $yellow_color;
+}
+
+.bg-primary-color {
+    background-color: #001632
+}
+
+.bg-secondary-color {
+    background-color: #fff
+}
+
+#preview-image {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.alert-success-primary-blue {
+    background-color: $primary_color;
+    color: $primary_text_color;
+    border: none;
+    border-radius: 0px;
+}
+
+.primary-button {
+    @include base_button;
+    @include blue_button;
+}
+
+.primary-button-sm {
+    @include base_button_sm;
+    @include blue_button;
+}
+
+.secondary-button {
+    @include base_button;
+    @include green_button;
+}
+
+.secondary-button-sm {
+    @include base_button_sm;
+    @include green_button;
+}
+
+.delete-button {
+    @include base_button;
+    @include red_button;
+}
+
+.delete-button-sm {
+    @include base_button_sm;
+    @include red_button;
+}
+
+.warning-button {
+    @include base_button;
+    @include yellow_button;
+}
+
+.warning-button-sm {
+    @include base_button_sm;
+    @include yellow_button;
+}
+
+
+.bg-green-active {
+    background-color: $secondary_color;
+}
+
+#sidebarMenu {
+    background-color: $primary_color;
+    padding: 0px;
+}
+
+#navbarSupportedContent {
+    .nav-item {
+        a {
+            color: #fff;
+
+            &:hover {
+                color: lightslategrey;
+
+            }
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 0px;
+        background-color: $primary_color;
+
+        a {
+
+            &:hover {
+
+                background-color: $secondary_color;
+            }
+        }
+    }
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: rgba(1, 60, 255, 0.479) // Choose your own color here
+}

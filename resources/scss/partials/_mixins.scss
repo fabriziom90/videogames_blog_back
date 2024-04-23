@@ -1,0 +1,65 @@
+@mixin base_button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px;
+    font-size: 14px;
+}
+
+@mixin base_button_sm {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0px;
+    font-size: 12px;
+}
+
+@mixin blue_button {
+    background-color: $primary_color;
+    color: $primary_text_color;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #003077;
+        color: $primary_text_color;
+    }
+}
+
+@mixin green_button {
+    background-color: $secondary_color;
+    color: $primary_text_color;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #00449c8a;
+        color: $primary_text_color;
+    }
+}
+
+@mixin yellow_button {
+    background-color: $yellow_color;
+    color: $primary_text_color;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #c3c300;
+        color: $primary_text_color;
+    }
+}
+
+@mixin red_button {
+    background-color: $red_color;
+    color: $primary_text_color;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #a70000;
+        ;
+        color: $primary_text_color;
+    }
+}
+
+@mixin badge {
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #fff;
+}
